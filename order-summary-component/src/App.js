@@ -8,8 +8,15 @@ function App() {
     <>
       <GlobalStyles />
       <ThemeProvider theme={theme}>
-        <div className="App">Hello App styled components</div>
-        <C.Card />
+        <C.Card>
+          <C.TopImage />
+          <C.BottomContainer>
+            <C.Description />
+            <C.PlansDiv />
+            <C.Button primary>Proceed to Payment</C.Button>
+            <C.Button>Cancel Order</C.Button>
+          </C.BottomContainer>
+        </C.Card>
       </ThemeProvider>
     </>
   );
